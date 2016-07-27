@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="css/mian.css"  />
-	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	
     <script type="text/javascript">
 		window.onload=function(){
 			var container=document.getElementById('container');
@@ -39,7 +39,7 @@
             function play(){
             	timer=setInterval(function(){
             		next.onclick();
-            	},2000);
+            	},1000);
             }
             function stop(){
             	clearInterval(timer);
@@ -89,97 +89,23 @@
 			{
 				document.getElementById("yilaofenlei").style.display="none";
 			}
-			function changeColor(num){
-	for(var i=1;i<=2;i++){
-		var str = document.getElementById('sub_'+i);
-		if(i==num){
-			str.style.backgroundColor="white";
-		}else{
-			str.style.backgroundColor="#d2d8d8";
-		}
-	}
-}
 	</script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 <body>
 <div class="t_bg">
 	<div class="top">
-        <div class="top_m">    	
+        <div class="top_m">
+        	<div class="search">
             	<input type="text" placeholder="">
             	<input name="" type="submit" value="">
+            </div>
         </div>
-            <div class="demo">
-		<nav class=" main_nav">	
-				<button class="but" href="" ><b>登录</b></button>
-				<button class="but" href="" ><b>注册</b></button>	
-		</nav>
-	</div>
-	
-	<div class="cd-user-modal"> 
-		<div class="cd-user-modal-container">
-			<ul class="cd-switcher">
-				<li><a href="#0" id="sub_1" onclick="changeColor('1')" style="background-color: white;">用户登录</a></li>
-				<li><a href="#0" id="sub_2" onclick="changeColor('2')">注册新用户</a></li>
-			</ul>
-
-			<div id="cd-login"> <!-- 登录表单 -->
-				<form class="cd-form">
-					<p class="fieldset">
-						<label class="image-replace cd-username" for="signin-username">用户名</label>
-						<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名">
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace cd-password" for="signin-password">密码</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="输入密码">
-					</p>
-
-					<p class="fieldset">
-						<input type="checkbox" id="remember-me" checked>
-						<label for="remember-me">记住登录状态</label>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width2" type="submit" value="登 录">
-					</p>
-				</form>
-			</div>
-
-			<div id="cd-signup"> <!-- 注册表单 -->
-				<form class="cd-form">
-					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-username">用户名</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="输入用户名">
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace cd-email" for="signup-email">邮箱</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="输入mail">
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password">密码</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="输入密码">
-					</p>
-
-					<p class="fieldset">
-						<input type="checkbox" id="accept-terms">
-						<label for="accept-terms">我已阅读并同意 <a href="#0">用户协议</a></label>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width2" type="submit" value="注 册 新 用 户">
-					</p>
-				</form>
-			</div>
-
-			<a href="#0" class="cd-close-form">关闭</a>
-		</div>
-	</div> 
-       </div>
+        <div class="top_m">
+        	<button class="but" href=""><b>登 录</b></button>
+            <button class="but" href=""><b>注 册</b></button>
+        </div>
+    </div>
 </div>
 <div class="header">
     <div class="head clearfix">
@@ -190,8 +116,8 @@
             <li><a href="#div2">咨 询 问 题</a></li>
             <li onMouseOver="fenlei()"  onMouseOut="fenlei2()"><a href="#div3">医 疗 器 材</a>
             	<div id="yilaofenlei">
-            		<a href="#">诊断性的器材</a><br />
-                    <a href="#">治疗性的器材</a><br />
+            		<a href="#">诊断性器材</a><br />
+                    <a href="#">治疗性器材</a><br />
             	</div>
             </li>
             <li><a href="">健 康 指 南</a></li>
@@ -316,6 +242,6 @@
 		<footer style="width: 1364px;height: 35px;background: #0068A3;color: white;">
 			<div id="last">版权所有&copy;</div>
 		</footer>
-		-->
+		 -->
 	</body>
 </html>

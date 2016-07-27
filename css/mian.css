@@ -40,8 +40,43 @@ img{
 .top{
 	width: 1364px;
     height: 34px;
+    margin: 0px auto;
+    text-align: right;
 }
-
+.top_m,.search {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 4px;
+    height: 34px;
+    vertical-align: top;
+    width: auto;
+}
+.search{
+	margin-top:2px;
+}
+.search input[type='text']{
+	width: 120px;
+	height: 18px;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+.search input[type='submit']{
+	width: 25px;
+	height: 20px;
+	background: url(../images/20958PICD6V_1024.jpg);
+}
+.but{
+	display: inline-block;
+	color: #0070B0;
+	border: none;
+	width: 56px;
+	height: 23px;
+	margin-right: 10px;
+}
+button{
+	cursor: pointer;
+	background-image: url(../img/btn1.jpg);
+}
 .header {
     width: 1364px;
     height: 70px;
