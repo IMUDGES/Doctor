@@ -1,0 +1,143 @@
+#include<iostream>
+using namespace std;
+int m=0,n=0,p=0;
+class student
+{
+	int num;
+	int  password;
+	char course[100];
+public:
+	///////////////////////////////////////////////////初始化
+	student()
+	{
+       num=p;
+	   password=0;
+	   course[1]='0';
+	   p++;
+	}
+
+	///////////////////////////////////////////////////选择课程
+	void system(int n,int p)
+	{
+        if(n==num&&p==password)
+		{
+		cout<<"输入你要选的课，1代表是数学2代表是语文以0为结束的标志"<<endl<<endl;
+		int n,i=1;
+		course[i]='q';
+		 cout<<"你选的课是："<<endl;
+		cin>>n;
+	  while( course[i]!='0')
+	  {   
+		 
+		  if(n==1)
+		  {
+			  cout<<"数学 "<<endl;
+              course[i]='A';
+			  i++;
+			  m++;
+		  }
+		  if(n==2)
+		  {
+			  cout<<"语文 "<<endl;
+              course[i]='B';
+			  i++;
+			  n++;
+		  }
+		  cin>>n;
+		  if(n==0)
+		  {
+            course[i]='0';
+		  }
+	  }
+	  cout<<endl;
+		}
+		else
+		{
+			cout<<"密码或账号不正确"<<endl;
+		}
+	 
+	}
+	//////////////////////////////////////////////////////////////////打印课程
+	 void show(int n,int p)
+	  {    if(n==num&&p==password)
+	 { int i=1;
+		   cout<<"你的课程是：";
+		  while(course[i]!='0')
+		  {    
+			  if(course[i]=='A')
+				  cout<<"数学 ";
+			  if(course[i]=='B')
+				  cout<<"语文 ";
+			  i++;
+
+		  }
+		  cout<<endl;
+	  }
+	 }
+     void show()
+	  {    
+	  int i=1;
+		   cout<<"你的学号是:"<<num<<"    你选的的课程是：";
+		  while(course[i]!='0')
+		  {    
+			  if(course[i]=='A')
+				  cout<<"数学 ";
+			  if(course[i]=='B')
+				  cout<<"语文 ";
+			  i++;
+
+		  }
+		  cout<<endl;
+	  
+	 }
+	 ///////////////////////////////////学生删课
+    void deletecouese()
+	{   int i=1;
+		char o;
+		cout<<"输入你要删除的课程";
+		cin>>o;
+		 while(course[i]!='0')
+		  {    
+			  if(course[i]==o)
+			     course[i]='q';
+			  i++;
+
+		  }
+	}
+	///////////////////////////////修改密码
+	void changepassword()
+	{
+        cout<<"请输入你要改的密码";
+		int c;
+		cin>>c;
+        password=c;
+	}
+
+
+};
+class teacher 
+{
+	int number;
+	int password;
+public:
+	void inquire()
+	{
+      cout<<"请输入你要查询的课程的数量1数学2语文";
+	  cin>>n;
+	  if(n==1)
+		  cout<<m<<endl;
+	  if(n==2)
+		  cout<<n<<endl;
+	}
+   
+
+
+};
+
+ 
+int main()
+{
+	student  a[100];
+}
+
+	

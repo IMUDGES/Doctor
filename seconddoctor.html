@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>各科医生</title>
+<link href="css/seconddoctor.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="banner">
+	<ul>
+		<li><img src="css/img/56r58PICazu_1024.jpg" width="1000" height="600"  /></li>
+		<li><img src="images/7351582_093639685198_2.jpg" width="1000" height="600"  /></li>
+		<li><img src="css/img/201503121232172121.jpg" width="1000" height="600"  /></li>
+		<li><img src="images/sy_201007231810117620108.jpg" width="1000" height="600" /></li>
+		<li><img src="images/68X58PIC3hI_1024.jpg" width="1000" height="600"  /></li>
+		<li><img src="images/16958154_1342928343kb1n.jpg" width="1000" height="600"/></li>
+	</ul>
+	<ol class="dots">
+	    <a href="thirddoctor.html" class="dot dot1 active">外科</a>	
+		<a href="thirddoctor.html" class="dot dot2">内科</a>
+		<a href="thirddoctor.html" class="dot dot3">儿科</a>	
+		<a href="thirddoctor.html" class="dot dot4">妇科</a>	
+		<a href="thirddoctor.html" class="dot dot5">急诊科</a>
+		<a href="thirddoctor.html" class="dot dot6">口腔科</a>	
+	</ol>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.banner').unslider({arrows:true,dots:true});
+	$('.banner .dots').eq(1).hide();
+	$('.banner .dot').mouseover(function(){
+		$(this).closest('.banner').find('ul').stop();
+		$(this).click();
+	});
+	$('.banner').hover(function(){
+		$(this).toggleClass('hover');
+	});
+});
+</script>
+
+<!-- 代码 结束 -->
+
+<div style="text-align:center;">
+</div>
+
+</body>
+</html>
