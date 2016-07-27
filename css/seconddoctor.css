@@ -31,8 +31,7 @@ body{font:13px/20px "Hiragino Sans GB", "Microsoft Yahei", "SimHei";background: 
 .dot6{width:170px;color:#1774e2;border-bottom-color:#b8e6fb;}
 .dot6.active{background:#b8e6fb;}
 .head ul li{
-	display: display:inline-block;
-	position: relative;
+ display:inline-block;
 	line-height:71px; 
 	font-size:20px; 
 	color:#333333;
@@ -47,8 +46,7 @@ body{font:13px/20px "Hiragino Sans GB", "Microsoft Yahei", "SimHei";background: 
 	width: 1000px;
 	height: 71px;
 	background-color: #EEEEEE;
-	position: relative;
-	left:460px;
+	margin: 0 auto;
 	
 }
 .head ul li:hover{
