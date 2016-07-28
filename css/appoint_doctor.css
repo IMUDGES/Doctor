@@ -1,0 +1,9 @@
+input{
+	display: block;
+	width: 200px;
+}
+#main
+{
+	margin: 0 auto;
+	width: 500px;
+}

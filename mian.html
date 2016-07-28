@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="css/mian.css"  />
-	<link rel="stylesheet" type="text/css" href="css/login.css" />
     <script type="text/javascript" >
 		window.onload=function(){
 			var container=document.getElementById('container');
@@ -94,6 +93,22 @@
 				alert("你的密码没有填写");
 			}
 		}
+		function user()
+		{
+			var username=document.getElementById("signin-username");
+			if(username.value.length==0)
+			{
+				alert("你的用户名没填写");
+			}
+		}
+		function password()
+		{
+			var passwords=document.getElementById("signin-password");
+			if(passwords.value.length==0)
+			{
+				alert("你的密码没有填写");
+			}
+		}
 		//注册的完备的填写
 		function finlishform()
 		{
@@ -106,6 +121,18 @@
 			alert("您的密码没有填写");
 			if(email.value.length==0)
 			alert("您的邮件没有填写");
+		}
+		function password_same()
+		{
+			var password1=document.getElementById("signup-password").value;
+			var password2=document.getElementById("signup-password2").value;
+			if (password1==password2) {
+				
+			} else{
+				alert("您输入的密码不一致");
+				
+			}
+
 		}
 		//医疗分类的下拉的效果
 			function fenlei()
@@ -156,12 +183,12 @@
 				<form class="cd-form">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signin-username">用户名</label>
-						<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名">
+						<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名" onblur="user()"> 
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">密码</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="输入密码">
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="输入密码" onblur="password()">
 					</p>
 
 					<p class="fieldset">
@@ -184,12 +211,16 @@
 
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">邮箱</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="输入mail">
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="输入email">
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password">密码</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="输入密码">
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="输入密码">
+					</p>
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">密码</label>
+						<input class="full-width has-padding has-border" id="signup-password2" type="password"  placeholder="请确定密码" onblur="password_same()">
 					</p>
 
 					<p class="fieldset">
