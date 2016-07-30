@@ -4,158 +4,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="css/mian.css"  />
-    <script type="text/javascript" >
-		window.onload=function(){
-			var container=document.getElementById('container');
-			var list=document.getElementById('list');
-			var buttons=document.getElementById('buttons').getElementsByTagName('span');
-			var prev=document.getElementById('prev');
-			var next=document.getElementById('next');
-			var index=1;
-			var timer;
-			
-			
-			function showButton()
-			{
-				for(var i=0;i<buttons.length;i++){
-					if(buttons[i].className =='on'){
-						buttons[i].className ='';
-						break;
-					}
-				}
-				buttons[index-1].className ='on';
-			}
-			function animate(offset){
-				var newleft=parseInt(list.style.left) + offset;
-				list.style.left=newleft + 'px';
-				if(newleft > -1364){
-					list.style.left = -4092 +'px';
-				}
-				if(newleft < -4092){
-					list.style.left = -1364 +'px';
-				       }
-				 }
-            function play(){
-            	timer=setInterval(function(){
-            		next.onclick();
-            	},2000);
-            }
-            function stop(){
-            	clearInterval(timer);
-            }
-			next.onclick = function(){
-				if(index==3){
-					index=1;
-				}
-				else{
-					index+=1;
-				}
-				showButton();
-				animate(-1364);
-			}
-			prev.onclick = function(){
-				if(index==1){
-					index=3;
-				}
-				else{
-					index-=1;
-				}
-				showButton();
-				animate(1364);
-			}
-			for(var i=0;i<buttons.length;i++){
-				buttons[i].onclick=function(){
-					if(this.className=='on'){
-						return;
-					}
-					var myindex=parseInt(this.getAttribute('index'));
-					var offset=-1364*(myindex-index);
-					animate(offset);
-					index=myindex;
-					showButton();
-				}
-			}
-			container.onmouseover = stop;
-			container.onmouseout = play;
-			play();
-		}
-		//登录的完备的填写
-		function finlishsunmit()
-		{
-			var username=document.getElementById("signin-username");
-			var passwords=document.getElementById("signin-password");
-			if(username.value.length==0)
-			{
-				alert("你的用户名没填写");
-			}
-			if(passwords.value.length==0)
-			{
-				alert("你的密码没有填写");
-			}
-		}
-		function user()
-		{
-			var username=document.getElementById("signin-username");
-			if(username.value.length==0)
-			{
-				alert("你的用户名没填写");
-			}
-		}
-		function password()
-		{
-			var passwords=document.getElementById("signin-password");
-			if(passwords.value.length==0)
-			{
-				alert("你的密码没有填写");
-			}
-		}
-		//注册的完备的填写
-		function finlishform()
-		{
-			var inusername=document.getElementById("signup-username");
-			var inpasswords=document.getElementById("signup-password");
-			var email=document.getElementById("signup-email");
-			if(inusername.value.length==0)
-			alert("您的用户名没有填写");
-			if(inpasswords.value.length==0)
-			alert("您的密码没有填写");
-			if(email.value.length==0)
-			alert("您的邮件没有填写");
-		}
-		function password_same()
-		{
-			var password1=document.getElementById("signup-password").value;
-			var password2=document.getElementById("signup-password2").value;
-			if (password1==password2) {
-				
-			} else{
-				alert("您输入的密码不一致");
-				
-			}
-
-		}
-		//医疗分类的下拉的效果
-			function fenlei()
-			{
-				document.getElementById("yilaofenlei").style.display="block";
-			}
-			function fenlei2()
-			{
-				document.getElementById("yilaofenlei").style.display="none";
-			}
-			function changeColor(num){
-	for(var i=1;i<=2;i++){
-		var str = document.getElementById('sub_'+i);
-		if(i==num){
-			str.style.backgroundColor="white";
-		}else{
-			str.style.backgroundColor="#d2d8d8";
-		}
-	}
-}
-	</script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 <body>
@@ -169,8 +19,8 @@
 		<nav class=" main_nav">	
 				<button class="but" href="" ><b>登录</b></button>
 				<button class="but" href="" ><b>注册</b></button>	
-		</nav>
-	</div>
+
+            /div>
 	
 	<div class="cd-user-modal"> 
 		<div class="cd-user-modal-container">
@@ -244,11 +94,11 @@
         <div class="logo"></a></div>
         <ul class="nav clearfix">
             <li><a href="seconddoctor.html">预 约 就 诊</a></li>
-            <li><a href="#div2">咨 询 问 题</a></li>
+            <li><a href="#div2">药品</a></li>
             <li onMouseOver="fenlei()"  onMouseOut="fenlei2()"><a href="#div3">医 疗 器 材</a>
             	<div id="yilaofenlei">
-            		<a href="#">诊断性器材</a><br />
-                    <a href="#">治疗性器材</a><br />
+            		<a href=" material1.html">诊断性器材</a><br />
+                    <a href="material-2.html">治疗性器材</a><br />
             	</div>
             </li>
             <li><a href="">健 康 指 南</a></li>
@@ -271,108 +121,6 @@
 		</div>
 		<a href="javascript:;" id="prev" class="arrow">&lt;</a>
 		<a href="javascript:;" id="next" class="arrow">&gt;</a>
-		</div>
-		
-		<!--
-        	作者：offline
-        	时间：2016-07-24
-        	描述：
-       
-		<div id="div1">
-			<div class="top_l">
-				   <span>按疾病找大夫</span>
-			</div>
-			<div class="bottom_l">
-				<div class="ness">
-					<strong>儿科</strong>
-					<ul>
-						<li><a href="">佝偻病</a></li>
-						<li><a href="">发育迟缓</a></li>
-						<li><a href="">营养不良</a></li>
-						<li><a href="">遗传代谢病</a></li>
-						<li><a href="">自闭症</a></li>
-						<li><a href="">精神分裂症</a></li>
-						<li><a href="">先天性心脏病</a></li>
-						<li><a href="">小儿多动症</a></li>
-						<li><a href="" target="_blank"style="color: #0070B0;">更多<<</a></li>
-					</ul>
-					<strong style="padding-top: 37px;">外科</strong>
-					<ul>
-						<li><a href="">脑出血</a></li>
-						<li><a href="">颈椎病</a></li>
-						<li><a href="">静脉曲张</a></li>
-						<li><a href="">生殖细胞瘤</a></li>
-						<li><a href="">脑血管畸形</a></li>
-						<li><a href="">锥体外系疾病</a></li>
-						<li><a href="">骨关节炎</a></li>
-						<li><a href="">腰间盘突出&nbsp;&nbsp;&nbsp;</a></li>
-						<li><a href="" target="_blank" style="color: #0070B0;">更多<<</a></li>
-					</ul>
-					<strong style="padding-top: 35px;">心脏</strong>
-					<ul>
-						<li><a href="">冠心病</a></li>
-						<li><a href="">高血压</a></li>
-						<li><a href="">心律失常</a></li>
-						<li><a href="">房颤</a></li>
-						<li><a href="">风湿性心脏病</a></li>
-						<li><a href="">急性感染性心内膜炎</a></li>
-						<li><a href="">心房扑动</a></li>
-						<li><a href="">克山病</a></li>
-						<li><a href="" target="_blank" style="color: #0070B0;">更多<<</a></li>
-					</ul>
-					<strong style="padding-top: 35px;">肿瘤</strong>
-					<ul>
-						<li><a href="">肺癌</a></li>
-						<li><a href="">淋巴癌</a></li>
-						<li><a href="">乳腺癌</a></li>
-						<li><a href="">直肠癌</a></li>
-						<li><a href="">食道癌</a></li>
-						<li><a href="">肝癌</a></li>
-						<li><a href="">甲状腺瘤</a></li>
-						<li><a href="">胰腺癌</a></li>
-						<li><a href="">鼻咽癌</a></li>
-						<li><a href="">乳腺纤维瘤</a></li>
-						<li><a href="" target="_blank" style="color: #0070B0;">更多<<</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="top_r">
-				<span>按医院找大夫</span>
-			</div>
-			<div class="bottom_r">	
-			</div>
-		</div>
-		<div id="div2">
-			<div class="top_l">
-				  <span>网上咨询</span>
-			</div>
-			<div class="bottom_l">
-				
-			</div>
-			<div class="top_r">
-				<span>电话咨询</span>
-			</div>
-			<div class="bottom_r">
-				
-			</div>
-		</div>
-		<div id="div3">
-			<div class="top_l">
-				   
-			</div>
-			<div class="bottom_l">
-				
-			</div>
-			<div class="top_r">
-				
-			</div>
-			<div class="bottom_r">
-				
-			</div>
-		</div>
-		<footer style="width: 1364px;height: 35px;background: #0068A3;color: white;">
-			<div id="last">版权所有&copy;</div>
-		</footer>
-		-->
+	</div>
 	</body>
 </html>

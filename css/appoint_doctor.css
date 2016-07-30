@@ -1,9 +1,24 @@
 input{
 	display: block;
-	width: 200px;
+	width: 400px;
+	height: 50px;
+	font-size: 30px;
+	background-color: #A4F7F6;
 }
-#main
-{
-	margin: 0 auto;
-	width: 500px;
+#submitbutton{
+  background-color: #F3BFD9;
 }
+.main
+{   position: absolute;
+    top: 50px;
+	font-size:30px;
+	color: #0068A3;
+    opacity: 0;
+    visibility: hidden;
+	
+}
+.main.is-visible{
+	opacity: 1;
+    visibility: visible;
+}
+
