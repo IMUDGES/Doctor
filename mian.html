@@ -203,24 +203,24 @@
 			</div>
 
 			<div id="cd-signup"> <!-- 注册表单 -->
-				<form class="cd-form">
+				<form action="php/common_register.php" class="cd-form" method="get">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">用户名</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="输入用户名">
+						<input class="full-width has-padding has-border" id="signup-username" type="text" name="name" placeholder="输入用户名">
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">邮箱</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="输入email">
+						<input class="full-width has-padding has-border" id="signup-email" type="text" nama="email" placeholder="输入email">
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password">密码</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="输入密码">
+						<input class="full-width has-padding has-border" id="signup-password" type="password" name="password1"  placeholder="输入密码">
 					</p>
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password">密码</label>
-						<input class="full-width has-padding has-border" id="signup-password2" type="password"  placeholder="请确定密码" onblur="password_same()">
+						<input class="full-width has-padding has-border" id="signup-password2" type="password" name="password2" placeholder="请确定密码" onblur="password_same()">
 					</p>
 
 					<p class="fieldset">
