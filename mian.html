@@ -20,7 +20,13 @@
             <div class="demo">
 		<nav class=" main_nav">	
 				<button class="but" href="" ><b>登录</b></button>
+<<<<<<< HEAD
+				<button class="but" href="" ><b>注册</b></button>	
+
+            </div>
+=======
            </div>
+>>>>>>> origin/master
 	
 	<div class="cd-user-modal"> 
 		<div class="cd-user-modal-container">
@@ -29,15 +35,15 @@
 				<li><a href="#0" id="sub_2" onclick="changeColor('2')">注册新用户</a></li>
 			</ul>
 			<div id="cd-login"> <!-- 登录表单 -->
-				<form class="cd-form">
+				<form class="cd-form" action="php/login.php" method="get">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signin-username">用户名</label>
-						<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名" onblur="user()"> 
+						<input class="full-width has-padding has-border" id="signin-username" type="text"  name="name" placeholder="输入用户名" onblur="user()">
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">密码</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="输入密码" onblur="password()">
+						<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" placeholder="输入密码" onblur="password()">
 					</p>
 
 					<p class="fieldset">
