@@ -28,12 +28,12 @@
             <state relative-caret-position="221">
               <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
-                <marker date="1469866453256" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
-                <marker date="1469866453256" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
-                <marker date="1469866453256" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
-                <marker date="1469866453256" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
-                <marker date="1469866453256" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
-                <marker date="1469866453256" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
+                <marker date="1469868110707" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
               </folding>
             </state>
           </provider>
@@ -54,17 +54,9 @@
       <file leaf-file-name="mian.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="40" column="88" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,8 +69,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/common_register.php" />
         <option value="$PROJECT_DIR$/mian.html" />
+        <option value="$PROJECT_DIR$/php/common_register.php" />
       </list>
     </option>
   </component>
@@ -230,12 +222,12 @@
       <workItem from="1469775057809" duration="9891000" />
       <workItem from="1469798419147" duration="949000" />
       <workItem from="1469840291378" duration="9837000" />
-      <workItem from="1469857443312" duration="10088000" />
+      <workItem from="1469857443312" duration="10163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32871000" />
+    <option name="totallyTimeSpent" value="32946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -284,12 +276,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1469866453256" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
           </folding>
         </state>
       </provider>
@@ -298,15 +290,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3485">
           <caret line="205" column="82" selection-start-line="205" selection-start-column="82" selection-end-line="205" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -315,12 +299,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1469866453256" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
           </folding>
         </state>
       </provider>
@@ -329,15 +313,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4136">
           <caret line="188" column="29" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -353,17 +329,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="40" column="88" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -372,12 +340,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
-            <marker date="1469866453256" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
-            <marker date="1469866453256" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:148" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:163" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:177" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:178" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:196" placeholder="INSERT INTO common... " />
+            <marker date="1469868110707" expanded="true" signature="98:200" placeholder="INSERT INTO common... " />
           </folding>
         </state>
       </provider>

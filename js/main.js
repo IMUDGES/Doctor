@@ -174,14 +174,9 @@ jQuery(document).ready(function($){
 		{
 			var inusername=document.getElementById("signup-username");
 			var inpasswords=document.getElementById("signup-password");
-			var email=document.getElementById("signup-email");
-			if(inusername.value.length==0)
-			alert("您的用户名没有填写");
-			if(inpasswords.value.length==0)
-			alert("您的密码没有填写");
-			if(email.value.length==0)
-			alert("您的邮件没有填写");
-			else {
+			var email=document.getElementById("signup-email")
+			if(email.value.length!=0&&inpasswords.value.length!=0&&inusername.value.length!=0)
+		    {
 				alert("注册成功");
 			}
 		}
