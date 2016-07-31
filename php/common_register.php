@@ -16,5 +16,5 @@ else
     echo "INSERT attempt failed";
 }
 $mysqli->close();
-header('Location:http://localhost:63342/Doctor/mian.html?_ijt=7hv4mf6g8ds6irn04df8c8n3ss');
+//header('Location:http://localhost:63342/Doctor/mian.html?_ijt=7hv4mf6g8ds6irn04df8c8n3ss');
 ?>

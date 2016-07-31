@@ -389,10 +389,7 @@ button{
 .cd-form input.has-error {
   border: 1px solid #d76666;
 }
-.cd-form input[type=password] {
-  /* space left for the HIDE button */
-  padding-right: 65px;
-}
+
 .cd-form input[type=submit] {
   padding: 16px 0;
   cursor: pointer;
