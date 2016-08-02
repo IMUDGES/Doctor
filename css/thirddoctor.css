@@ -64,7 +64,7 @@ nav ul li:hover a{color:#ffffff;}
 .block01 article{width:250px;height:300px; margin:0 auto; background:#EEEEEE; border-bottom:2px solid #999;}
 .block01 img{-webkit-filter: none;}
 .block01 a img {-webkit-transition: all 0.5s;}
-.block01 a img:hover {-webkit-filter: drop-shadow(0px 20px 10px #000)}
+/*.block01 a img:hover {-webkit-filter: drop-shadow(0px 20px 10px #000)}*/
 .block01 a img.brightness:hover {-webkit-filter: brightness(0);}
 .block01 h2{ font-size:14px; padding:10px 0px;}
 ///////////////////////////////////////////////////////

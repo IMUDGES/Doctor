@@ -1,0 +1,10 @@
+.main{
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+	background-color: #006698;
+	
+}
+button{
+	float: left;
+}

@@ -299,7 +299,15 @@ strong{
     line-height: 70px;
   }
 }
-.but{
+.but111{
+	display: inline-block;
+	color: #0070B0;
+	border: none;
+	width: 56px;
+	height: 23px;
+	margin-right: 10px;
+}
+.but222{
 	display: inline-block;
 	color: #0070B0;
 	border: none;
@@ -434,4 +442,7 @@ button{
 }
 #cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
   display: block;
+}
+a{
+	text-decoration: none; 
 }

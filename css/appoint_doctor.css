@@ -1,24 +1,35 @@
 input{
 	display: block;
-	width: 400px;
+	width: 500px;
 	height: 50px;
 	font-size: 30px;
-	background-color: #A4F7F6;
+	margin: 0 auto;
+	background-color:#555555;
+	margin-top: 10px;
+	border-radius:10px;
 }
 #submitbutton{
-  background-color: #F3BFD9;
+  background-color: #999999;
 }
 .main
-{   position: absolute;
-    top: 50px;
+{   position: relative;
+    top: 100px;
 	font-size:30px;
-	color: #0068A3;
-    opacity: 0;
-    visibility: hidden;
+	color: #D7D7D7;
+	margin: 0 auto;
+	width: 800px;
+	height: 500px;
 	
 }
-.main.is-visible{
-	opacity: 1;
-    visibility: visible;
-}
 
+.header{
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	top: 50px;
+}
+body{
+	background: url(../images/u=2068960461,3901192200&fm=21&gp=0.jpg);
+	  background-size:cover;
+}

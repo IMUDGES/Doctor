@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 		$form_modal_tab = $('.cd-switcher'),
 		$tab_login = $form_modal_tab.children('li').eq(0).children('a'),
 		$tab_signup = $form_modal_tab.children('li').eq(1).children('a'),
-		$main_nav = $('.main_nav');
+		$main_nav = $('.but111');
 
 	//弹出窗口
 	$main_nav.on('click', function(event){
@@ -149,6 +149,9 @@ jQuery(document).ready(function($){
 			{
 				alert("你的密码没有填写");
 			}
+			else {
+				alert("登录成功");
+			}
 		}
 		function user()
 		{
@@ -158,9 +161,9 @@ jQuery(document).ready(function($){
 				alert("你的用户名没填写");
 			}
 		}
-		function passwords()
+		function password()
 		{
-			var passwords=document.getElementById("signin-password111");
+			var passwords=document.getElementById("signin-password");
 			if(passwords.value.length==0)
 			{
 				alert("你的密码没有填写");
@@ -171,12 +174,23 @@ jQuery(document).ready(function($){
 		{
 			var inusername=document.getElementById("signup-username");
 			var inpasswords=document.getElementById("signup-password");
-			var email=document.getElementById("signup-email");
-			var inpasswords2=document.getElementById("signup-password2");
-			if(email.value.length!=0&&inpasswords.value.length!=0&&inusername.value.length!=0&&inpasswords.value==inpasswords2.value)
+			var email=document.getElementById("signup-email")
+			if(email.value.length!=0&&inpasswords.value.length!=0&&inusername.value.length!=0)
 		    {
 				alert("注册成功");
 			}
+		}
+		function password_same()
+		{
+			var password1=document.getElementById("signup-password").value;
+			var password2=document.getElementById("signup-password2").value;
+			if (password1==password2) {
+				
+			} else{
+				alert("您输入的密码不一致");
+				
+			}
+
 		}
 		//医疗分类的下拉的效果
 			function fenlei()

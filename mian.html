@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="css/mian.css"  />
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/jquery-1.10.0.js" type="text/javascript" charset="utf-8"></script>
@@ -19,7 +20,8 @@
         </div>
             <div class="demo">
 		     <nav class=" main_nav">	
-				<button class="but" href="" ><b>登录</b></button>
+				<button class="but111" href="" ><b>用户登录</b></button>
+				<button class="but222" ><a href="login.html"><b>医生登录</b></a></button>
 
            </div>
           </div>
@@ -31,7 +33,7 @@
 				<li><a href="#0" id="sub_2" onclick="changeColor('2')">注册新用户</a></li>
 			</ul>
 			<div id="cd-login"> <!-- 登录表单 -->
-				<form class="cd-form" action="php/login.php" method="get" id="from2222">
+				<form class="cd-form" action="php/login.php" method="get">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signin-username">用户名</label>
 						<input class="full-width has-padding has-border" id="signin-username" type="text"  name="name" placeholder="输入用户名" onblur="user()">
@@ -39,14 +41,13 @@
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">密码</label>
-						<input class="full-width has-padding has-border" id="signin-password111" type="password" name="password" placeholder="输入密码" onblur="passwords()">
+						<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" placeholder="输入密码" onblur="password()">
 					</p>
 
 					<p class="fieldset">
 						<input type="checkbox" id="remember-me" checked>
 						<label for="remember-me">记住登录状态</label>
 					</p>
-
 					<p class="fieldset">
 						<input class="full-width2" type="submit" value="登 录" onclick="finlishsunmit()">
 					</p>
@@ -88,7 +89,7 @@
 			<a href="#0" class="cd-close-form">关闭</a>
 		</div>
 	</div> 
-       </div>
+    </div>
 </div>
 <div class="header">
     <div class="head clearfix">
@@ -125,17 +126,15 @@
 	</div>
 	<script type="text/javascript">
    $(document).ready(function(){
-   	$("#from2222").validate(
-   		{
-   		   rules:
-   		   {
-   		   	
-   		   },
-   		   messages:
-   		   {}
-   		   
-   		}
-   	)
+   	$(".full-width2").click(function()
+   	{
+   		$.ajax({
+   			type:"GET",
+   			url:"php/common_register.php",
+   			success:function(){alert("注册成功") },
+   			error:function(){alert("注册失败")},
+   		})
+   	})
    	$("#form11111").validate({
    		rules:{
    			name:{
@@ -147,15 +146,7 @@
  			required:true,
   			minlength:6,
    			maxlength:15,
- 			},
- 			 "password2": {
- 			   	    required:true,
-                    equalTo: "#signup-password",
-               },
-               email:{
-               	required:true,
-               	email:true,
-               }
+ 			}
    			
    		},
    		messages:{
@@ -168,20 +159,10 @@
  			required:"密码是必须填写的",
   			minlength:"最小的长度是6位",
    			maxlength:"最大的长度是15位",
- 			},
- 			"password2": {
- 			   	    required:"在此输入相同的密码",
-                    equalTo: "俩次输入的密码不一致",
-               },
-             email:{
-               	required:"邮箱必须填写",
-               	email:"输入正确的email格式",
-               }
+ 			}
    			}
-   		
    	})
-   });
-   $()
+   })
 	</script>
 	</body>
 </html>
