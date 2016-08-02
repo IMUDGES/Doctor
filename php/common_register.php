@@ -7,14 +7,16 @@
 */
 $sql="INSERT INTO common(username,email,password)VALUES('$_GET[name]','$_GET[email]','$_GET[password2]');";
 $mysqli = new mysqli('123.207.141.93', 'root', 'a96S04d02', 'user');
-if($mysqli->query($sql)==TRUE)
-{
-    echo "INSERT successsful";
+$res="SELECT * FROM common where username='{$_GET['name']}';";
+$result = mysqli_query($mysqli,$res);
+$row = mysqli_fetch_row($result);
+if($row) {
+    echo "failed";
 }
-else
-{
-    echo "INSERT attempt failed";
+else {
+    if (mysqli_query($mysqli,$sql) != TRUE) {
+        echo "INSERT attempt failed";
+    }
 }
-$mysqli->close();
-//header('Location:http://localhost:63342/Doctor/mian.html?_ijt=7hv4mf6g8ds6irn04df8c8n3ss');
+header('Location:http://localhost:63342/Doctor/mian.html?_ijt=j29jfjd8p6bb1ec960u1ltcmi3');
 ?>
