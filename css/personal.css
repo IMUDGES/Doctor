@@ -5,6 +5,28 @@
 	background-color: #006698;
 	
 }
+.m3{
+	position: absolute;
+	background-color: #006698;
+	top: 50px;
+	width:400px ;
+	height: 600px;
+}
+.m4{
+	position: absolute;
+	background-color: #555555;
+	top: 50px;
+	width:400px ;
+	height: 600px;
+	display: none;
+}
 button{
 	float: left;
+	width: 200px;
+	height: 50px;
+	color: #00A3FF;
+}
+input{
+	position: relative;
+	width: 395px;
 }

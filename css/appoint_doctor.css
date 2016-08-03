@@ -5,21 +5,29 @@ input{
 	font-size: 30px;
 	margin: 0 auto;
 	background-color:#555555;
-	margin-top: 10px;
 	border-radius:10px;
 }
 #submitbutton{
-  background-color: #999999;
+	background-color: #999999;
+	margin-left: 150px;
+	margin-top: 20px;
 }
-.main
+.main1
 {   position: relative;
     top: 100px;
 	font-size:30px;
 	color: #D7D7D7;
 	margin: 0 auto;
 	width: 800px;
-	height: 500px;
+	height: 600px;
+	background-color: #B3B8C4;
+	border-radius: 20px;
+	padding-top: 100px;
 	
+	
+}
+body{
+	background-color: #00A3FF;
 }
 
 .header{
@@ -28,8 +36,4 @@ input{
 	width: 1000px;
 	text-align: center;
 	top: 50px;
-}
-body{
-	background: url(../images/u=2068960461,3901192200&fm=21&gp=0.jpg);
-	  background-size:cover;
 }

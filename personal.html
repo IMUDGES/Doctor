@@ -4,15 +4,43 @@
 		<meta charset="UTF-8">
 		<title>医生的个人界面</title>
 		<link rel="stylesheet" type="text/css" href="css/personal.css"/>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
 	</head>
 	<body>
 		<div class="main">
               <div class="m_1">
-	            <button>你同意预约的人</button>
+	            <button id="buttons11" value="1">你同意预约的人</button>	         
               </div>	
               <div class="m_2">
-	             <button>想要预约你的人</button>
-              </div>	
+	             <button value="2">想要预约你的人</button>
+              </div>
+              <div class="m3">
+                 <input type="text" />
+                 <input type="text" />
+                 <input type="text" />
+              </div>
+              <div class="m4">
+              	
+              </div>
 		</div>
+		
+		<script type="text/javascript">
+	       $(".m_1").click(
+	       	function()
+	       	{
+	       	   $(".m4").hide();
+	       	   $(".m3").hide();
+	       	   $(".m3").slideDown();
+	       	}
+	       );
+	       $(".m_2").click(
+	       	function()
+	       	{
+	       	   $(".m4").hide();
+	       	   $(".m3").hide();
+	       	   $(".m4").slideDown();
+	       	}
+	       )
+		</script>
 	</body>
 </html>
