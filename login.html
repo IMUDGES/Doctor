@@ -57,7 +57,8 @@
   <!--注册-->
     <div class="qlogin" id="qlogin" style="display: none; ">
    
-    <div class="web_login"><form name="form2" id="regUser" accept-charset="utf-8"  action="" method="post">
+    <div class="web_login">
+    <form name="form2" id="regUser" action="php/doctor_register.php" method="get">
 	      <input type="hidden" name="to" value="reg"/>
 		      		       <input type="hidden" name="did" value="0"/>
         <ul class="reg_form" id="reg-ul">
@@ -66,7 +67,7 @@
                 	
                     <label for="user"  class="input-tips2">用户名：</label>
                     <div class="inputOuter2">
-                        <input type="text" id="user" name="user" maxlength="16" class="inputstyle2"/>
+                        <input type="text" id="user" name="name" maxlength="16" class="inputstyle2"/>
                     </div>
                     
                 </li>
@@ -89,7 +90,7 @@
                  <label for="qq" class="input-tips2">医生类型：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="doctortype" name="doctortype" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="doctortype" name="type" maxlength="10" class="inputstyle2"/>
                     </div>
                    
                 </li>
@@ -97,7 +98,7 @@
                  <label for="qq" class="input-tips2">个人简介：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id=" introduction" name=" introduction" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id=" introduction" name=" introduce" maxlength="10" class="inputstyle2"/>
                     </div>
                    
                 </li>
@@ -105,14 +106,14 @@
                 <li>
                 <label for="passwd" class="input-tips2">密码：</label>
                     <div class="inputOuter2">
-                        <input type="password" id="passwd"  name="passwd" maxlength="16" class="inputstyle2"/>
+                        <input type="password" id="passwd"  name="password1" maxlength="16" class="inputstyle2"/>
                     </div>
                     
                 </li>
                 <li>
                 <label for="passwd2" class="input-tips2">确认密码：</label>
                     <div class="inputOuter2">
-                        <input type="password" id="passwd2" name="" maxlength="16" class="inputstyle2" />
+                        <input type="password" id="passwd2" name="password2" maxlength="16" class="inputstyle2" />
                     </div>
                     
                 </li>
@@ -120,11 +121,12 @@
                 
                <li>
                     <div class="inputArea">
-                        <input type="button" id="reg"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="同意协议并注册"/> <a href="#" class="zcxy" target="_blank">注册协议</a>
+                        <input type="submit" id="reg"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="同意协议并注册"/> 
                     </div>
                     
                 </li><div class="cl"></div>
-            </ul></form>
+            </ul>
+            </form>
            
     
     </div>
