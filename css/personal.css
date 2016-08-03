@@ -1,22 +1,26 @@
 .main{
 	position: relative;
-	width: 500px;
+	width: 1000px;
 	margin: 0 auto;
+	top: 100px;
 	background-color: #006698;
 	
 }
 .m3{
 	position: absolute;
-	background-color: #006698;
+	background-color: #FFFFFF;
 	top: 50px;
-	width:400px ;
+	width:800px ;
 	height: 600px;
+	opacity: 0.9;
+	background: url(../images/68X58PIC3hI_1024.jpg);
+	background-size: cover;
 }
 .m4{
 	position: absolute;
 	background-color: #555555;
 	top: 50px;
-	width:400px ;
+	width:800px ;
 	height: 600px;
 	display: none;
 }
@@ -25,8 +29,12 @@ button{
 	width: 200px;
 	height: 50px;
 	color: #00A3FF;
+	background-color: #FFFFFF;
+	font-size: 20px;
 }
-input{
-	position: relative;
-	width: 395px;
+body{
+	  
+	 background-color: #00A3FF;
+	 color: #FFFFFF;
+	
 }

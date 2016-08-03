@@ -11,6 +11,8 @@ input{
 	background-color: #999999;
 	margin-left: 150px;
 	margin-top: 20px;
+	font-size: 30px;
+	border-radius: 10px;
 }
 .main1
 {   position: relative;
@@ -22,7 +24,7 @@ input{
 	height: 600px;
 	background-color: #B3B8C4;
 	border-radius: 20px;
-	padding-top: 100px;
+	padding-top: 70px;
 	
 	
 }
