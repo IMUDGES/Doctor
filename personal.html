@@ -16,13 +16,26 @@
               <div class="m_3">
 	             <button value="2">你同意预约的人</button>
               </div>
-                <div class="m_3">
+                <div class="m_4">
 	             <button value="2">修改个人信息</button>
               </div>
               <div class="m3">
               </div>
               <div class="m4">
+              </div>
+              <div class="m5">
               	
+              </div>
+              <div class="m6">
+              	<form>
+              		<input type="text" placeholder="请输入要修改的用户名" />
+              		<input type="text" placeholder="请输入要修改的密码" />
+              		<input type="text" placeholder="请确定要修改的密码"/>
+              		<input type="text" placeholder="请输入要修改的手机号"/>
+              		<input type="text" placeholder="请输入要修改的医生类型"/>
+              		<input type="text" placeholder="请输入要修改的手机号"/> 
+              		<input type="submit"  value="确定修改" id="butt"/>        
+              	</form>
               </div>
 		</div>
 		
@@ -32,6 +45,8 @@
 	       	{
 	       	   $(".m4").hide();
 	       	   $(".m3").hide();
+	       	   $(".m5").hide();
+	       	   $(".m6").hide();
 	       	   $(".m3").slideDown();
 	       	}
 	       );
@@ -40,9 +55,31 @@
 	       	{
 	       	   $(".m4").hide();
 	       	   $(".m3").hide();
+	       	   $(".m5").hide();
+	       	   $(".m6").hide();
 	       	   $(".m4").slideDown();
 	       	}
-	       )
+	       );
+	        $(".m_3").click(
+	       	function()
+	       	{
+	       	   $(".m4").hide();
+	       	   $(".m3").hide();
+	       	   $(".m5").hide();
+	       	   $(".m6").hide();
+	       	   $(".m5").slideDown();
+	       	}
+	       );
+	        $(".m_4").click(
+	       	function()
+	       	{
+	       	   $(".m4").hide();
+	       	   $(".m3").hide();
+	       	   $(".m5").hide();
+	       	   $(".m6").hide();
+	       	   $(".m6").slideDown();
+	       	}
+	       );
 		</script>
 	</body>
 </html>

@@ -137,7 +137,7 @@ jQuery(document).ready(function($){
 			play();
 		}
 		//登录的完备的填写
-		function finlishsunmit()
+		/*function finlishsunmit()
 		{
 			var username=document.getElementById("signin-username");
 			var passwords=document.getElementById("signin-password");
@@ -152,7 +152,7 @@ jQuery(document).ready(function($){
 			else {
 				alert("登录成功");
 			}
-		}
+		}*/
 		function user()
 		{
 			var username=document.getElementById("signin-username");
@@ -170,7 +170,7 @@ jQuery(document).ready(function($){
 			}
 		}
 		//注册的完备的填写
-		function finlishform()
+		/*function finlishform()
 		{
 			var inusername=document.getElementById("signup-username");
 			var inpasswords=document.getElementById("signup-password");
@@ -179,7 +179,7 @@ jQuery(document).ready(function($){
 		    {
 				alert("注册成功");
 			}
-		}
+		}*/
 		function password_same()
 		{
 			var password1=document.getElementById("signup-password").value;

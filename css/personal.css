@@ -24,6 +24,28 @@
 	height: 600px;
 	display: none;
 }
+.m5{
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 50px;
+	width:800px ;
+	height: 600px;
+	opacity: 0.9;
+	background: url(../images/68X58PIC3hI_1024.jpg);
+	background-size: cover;
+}
+.m6{
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 50px;
+	width:800px ;
+	height: 600px;
+	opacity: 0.9;
+	background: url(../images/68X58PIC3hI_1024.jpg);
+	background-size: cover;
+}
+
+
 button{
 	float: left;
 	width: 200px;
@@ -36,5 +58,20 @@ body{
 	  
 	 background-color: #00A3FF;
 	 color: #FFFFFF;
+	
+}
+.m6 form{
+	margin-top: 100px;
+}
+.m6 input{
+	display: block;
+	width: 500px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 20px;
+	margin:  auto;
+}
+#butt{
+	background-color: #809191
 	
 }

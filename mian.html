@@ -33,7 +33,7 @@
 				<li><a href="#0" id="sub_2" onclick="changeColor('2')">注册新用户</a></li>
 			</ul>
 			<div id="cd-login"> <!-- 登录表单 -->
-				<form class="cd-form" action="php/login.php" method="get">
+				<form class="cd-form" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signin-username">用户名</label>
 						<input class="full-width has-padding has-border" id="signin-username" type="text"  name="name" placeholder="输入用户名" onblur="user()">
@@ -55,7 +55,7 @@
 			</div>
 
 			<div id="cd-signup"> <!-- 注册表单 -->
-				<form  action="php/common_register.php" class="cd-form" method="get" id="form11111">
+				<form  class="cd-form" action="php/common_register.php" method="get" id="form11111">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">用户名</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" name="name" placeholder="输入用户名">
@@ -126,13 +126,17 @@
 	</div>
 	<script type="text/javascript">
    $(document).ready(function(){
-   	/*$(".full-width2").click(function()
+   /*$(".full-width2").click(function()
    	{
    		$.ajax({
-   			type:"GET",
-   			url:"php/common_register.php",
-   			success:function(){alert("注册成功") },
-   			error:function(){alert("注册失败")},
+   			type:  "GET",
+			url: "php/common_register.php",
+			success: function(){
+		         alert("注册成功00000"); 
+			},
+			error: function(jqXHR){     
+			   alert("发生错误：" + jqXHR.status);  
+			}, 
    		})
    	})*/
    	$("#form11111").validate({
@@ -147,7 +151,6 @@
   			minlength:6,
    			maxlength:15,
  			}
-   			
    		},
    		messages:{
    			name:{
