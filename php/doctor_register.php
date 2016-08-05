@@ -14,6 +14,5 @@ else {
         echo "INSERT attempt failed";
     }
 }
-header('Location:http://localhost:63342/Doctor/mian.html?_ijt=j29jfjd8p6bb1ec960u1ltcmi3');
-
+header('Location:http://localhost:81/Doctor/mian.html');
 ?>

@@ -5,6 +5,7 @@
  * Date: 2016/7/29
  * Time: 10:59
 */
+
 header('Content-Type:text/html;charset=utf-8');
 $sql="INSERT INTO common(username,email,password)VALUES('$_GET[name]','$_GET[email]','$_GET[password2]');";
 $mysqli = new mysqli('123.207.141.93', 'root', 'a96S04d02', 'user');
@@ -20,5 +21,5 @@ else {
         echo "INSERT attempt failed";
     }
 }
-header('Location:http://localhost:63342/Doctor/mian.html?_ijt=j29jfjd8p6bb1ec960u1ltcmi3');
+header('Location:http://localhost:81/Doctor/mian.html');
 ?>

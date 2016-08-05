@@ -116,15 +116,15 @@
 </section>
 <div class="modal" id="mymodal">
 	 <div class="main1">
-     	<form>
+     	<form action="php/bespeak.php" method="get">
      		<label for="username" class="cd-username111"></label>
-     		<input id="username" type="text" placeholder="请您输入您的姓名" />
+     		<input id="username" type="text" name="username" placeholder="请您输入您的姓名" />
      		<label for="numberphone" ></label>
-     		<input id="numberphone" type="text" placeholder="请您输入正确的手机号"/>
+     		<input id="numberphone" type="text" name="phonenumber" placeholder="请您输入正确的手机号"/>
      		<label for="username"></label>
-     		<input id="username" type="text" placeholder="请您输入您预约医生的姓名" />
+     		<input id="username" type="text" name="doctorname" placeholder="请您输入您预约医生的姓名" />
      		<label for="illness"></label>
-     		<input  type="text" id="illness" style="height: 100px;" placeholder="请描述您的病情"/>
+     		<input  type="text" id="illness" style="height: 100px;" name="about" placeholder="请描述您的病情"/>
      		<input type="submit" id="submitbutton" class="btn btn-default"  value="预约医生"/>
      	</form> 	
      </div>

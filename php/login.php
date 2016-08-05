@@ -14,7 +14,7 @@ if($row===1)
         'name' => '$name',
         'password'=>'$password'
     );
-    header('Location:http://localhost:63342/html/Doctor/mian.html');
+    header('Location:http://127.0.0.1:81/Doctor/mian.html');
     $_SESSION['name'] = $userinfo['name'];
     $_SESSION['password'] = $userinfo['password'];
     $_SESSION['userinfo'] = $userinfo;
