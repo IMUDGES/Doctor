@@ -9,17 +9,19 @@ $result = mysqli_query($con,$sql);
 $row=mysqli_num_rows($result);
 if($row===1)
 {
-    session_start();
+    $json=json_encode($name);
+    echo $josn;
+    /*session_start();
     $userinfo = array(
         'name' => '$name',
         'password'=>'$password'
     );
-    header('Location:http://127.0.0.1:81/Doctor/mian.html');
+    header('Location:http://localhost:81/Doctor/mian.html');
     $_SESSION['name'] = $userinfo['name'];
     $_SESSION['password'] = $userinfo['password'];
     $_SESSION['userinfo'] = $userinfo;
     //* 将用户数据保存到cookie中的一个简单方法 */
-    $secureKey = 'doctor'; //加密密钥
+    /*$secureKey = 'doctor'; //加密密钥
     $str = serialize($userinfo); //将用户信息序列化
 //用户信息加密前
     $str = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($secureKey), $str, MCRYPT_MODE_ECB));
@@ -31,7 +33,7 @@ if($row===1)
     $str = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($secureKey), base64_decode($str), MCRYPT_MODE_ECB);
     $uinfo = unserialize($str);
     echo "解密后的用户信息：<br>";
-    print_r($uinfo);
+    print_r($uinfo);*/
 }
 else
     echo "登录失败！";
