@@ -4,6 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>各科医生</title>
 <link href="css/seconddoctor.css" rel="stylesheet" type="text/css">
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
 </head>
 <body>
 <!-- 代码 开始 -->
@@ -26,17 +30,18 @@
 		<li><img src="images/16958154_1342928343kb1n.jpg" width="1000" height="600"/></li>
 	</ul>
 	<ol class="dots">
-	    <a href="thirddoctor.html" class="dot dot1 active">外科</a>
-		<a href="thirddoctor11.html" class="dot dot2">内科</a>
-		<a href="thirddoctor2.html" class="dot dot3">儿科</a>	
-		<a href="thirddoctor3.html" class="dot dot4">妇科</a>	
-		<a href="thirddoctor4.html" class="dot dot5">急诊科</a>
-		<a href="thirddoctor5.html" class="dot dot6">口腔科</a>	
+	    <a href="" class="dot dot1 active">外科</a>
+		<a href="" class="dot dot2">内科</a>
+		<a href="" class="dot dot3">儿科</a>	
+		<a href="" class="dot dot4">妇科</a>	
+		<a href="" class="dot dot5">急诊科</a>
+		<a href="" class="dot dot6">口腔科</a>	
 	</ol>
 </div>
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/seconddoctor.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
 $(function(){
 	$('.banner').unslider({arrows:true,dots:true});
@@ -49,6 +54,90 @@ $(function(){
 		$(this).toggleClass('hover');
 	});
 });
+$(".dot1").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "外科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
+$(".dot2").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "内科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
+$(".dot3").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "儿科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
+$(".dot4").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "妇科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
+$(".dot5").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "急诊科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
+$(".dot6").click(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/a.php",
+   			data: {
+				classify: "口腔科",
+				
+			},
+
+   			dataType: "json",
+     
+   		})
+   	
+})
 </script>
 
 <!-- 代码 结束 -->

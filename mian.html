@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 	<meta charset="utf-8" />
@@ -55,7 +55,7 @@
 			</div>
 
 			<div id="cd-signup"> <!-- 注册表单 -->
-				<form  class="cd-form" action="php/common_register.php" method="get" id="form11111">
+				<form  class="cd-form" id="form11111" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">用户名</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" name="name" placeholder="输入用户名">
@@ -126,11 +126,18 @@
 	</div>
 	<script type="text/javascript">
    $(document).ready(function(){
-   /*$(".full-width2").click(function()
+   $(".full-width2").click(function()
    	{
    		$.ajax({
    			type:  "GET",
 			url: "php/common_register.php",
+			data:{
+				username: $("signup-username").val(),
+				password: $("signup-password2").val(), 
+				email: $("signup-email").val(), 
+
+			},
+			dataType: "json",
 			success: function(){
 		         alert("注册成功00000"); 
 			},
@@ -138,7 +145,7 @@
 			   alert("发生错误：" + jqXHR.status);  
 			}, 
    		})
-   	})*/
+   	})
    	$("#form11111").validate({
    		rules:{
    			name:{
