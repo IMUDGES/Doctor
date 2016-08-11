@@ -80,6 +80,19 @@
 	       	   $(".m6").slideDown();
 	       	}
 	       );
+	       $(document).ready(function(){
+  	  		$.ajax({
+   			type:  "GET",
+   			url:"php/doctor_login.php",
+   			dataType: "json",
+			success: function(data){
+       
+		           var obj = eval(data);
+	               alert(obj);
+                       }
+		
+   		})
+  }) 
 		</script>
 	</body>
 </html>

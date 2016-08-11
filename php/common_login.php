@@ -1,7 +1,6 @@
-<html>
+
 <?php
 $con=mysqli_connect("123.207.141.93","root","a96S04d02","user");
-
 $name=$_GET['name'];
 $password=$_GET['password'];
 $sql = "select * from common where username='$name' and password='$password'";
@@ -10,7 +9,7 @@ $row=mysqli_num_rows($result);
 if($row===1)
 {
     $json=json_encode($name);
-    echo $josn;
+    echo $json;
     /*session_start();
     $userinfo = array(
         'name' => '$name',
@@ -37,4 +36,4 @@ if($row===1)
 }
 else
     echo "登录失败！";
-?></html>
+?>

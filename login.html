@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <title>医生的注册网页</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -27,24 +27,24 @@
     
             
             <div class="login_form">
-                <form action="" name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" method="post"><input type="hidden" name="did" value="0"/>
+                <form  name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" ><input type="hidden" name="did" value="0"/>
                <input type="hidden" name="to" value="log"/>
                 <div class="uinArea" id="uinArea">
                 <label class="input-tips" for="u">帐号：</label>
                 <div class="inputOuter" id="uArea">
                     
-                    <input type="text" id="u" name="username" class="inputstyle"/>
+                    <input type="text" id="u" name="name" class="inputstyle"/>
                 </div>
                 </div>
                 <div class="pwdArea" id="pwdArea">
                <label class="input-tips" for="p">密码：</label> 
                <div class="inputOuter" id="pArea">
                     
-                    <input type="password" id="p" name="p" class="inputstyle"/>
+                    <input type="password" id="p" name="password" class="inputstyle"/>
                 </div>
                 </div>
                
-                <div style="padding-left:50px;margin-top:20px;"><input type="submit" value="登 录" style="width:150px;" class="button_blue"/></div>
+                <div style="padding-left:50px;margin-top:20px;"><input type="button" value="登 录" style="width:150px;" class="button_blue" onclick="mysubmit2()" /></div>
               </form>
            </div>
            
@@ -58,7 +58,7 @@
     <div class="qlogin" id="qlogin" style="display: none; ">
    
     <div class="web_login">
-    <form name="form2" id="regUser" >
+    <form name="form2" id="regUser222" >
           <input type="hidden" name="to" value="reg"/>
                            <input type="hidden" name="did" value="0"/>
         <ul class="reg_form" id="reg-ul">
@@ -66,7 +66,7 @@
                     
                     <label for="user"  class="input-tips2">用户名：</label>
                     <div class="inputOuter2">
-                        <input type="text" id="user" name="name" maxlength="16" class="inputstyle2"/>
+                        <input type="text" id="user" name="name"  class="inputstyle2"/>
                     </div>
                     
                 </li>
@@ -74,14 +74,14 @@
                  <label for="qq" class="input-tips2" >邮箱：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="email" name="email" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="email" name="email"  class="inputstyle2"/>
                     </div>
                    
                 </li>
                   <label for="qq" class="input-tips2" >手机号：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="phonenumber" name="phonenumber" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="phonenumber" name="phonenumber"  class="inputstyle2"/>
                     </div>
                    
                 </li>
@@ -102,7 +102,7 @@
                  <label for="qq" class="input-tips2">个人简介：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="introdouce" name=" introduce" maxlength="10" class="inputstyle2 "/>
+                        <input type="text" id="introdouce" name=" introduce"  class="inputstyle2 "/>
                     </div>
                    
                 </li>
@@ -125,10 +125,12 @@
                 
                <li>
                     <div class="inputArea">
-                        <input type="button" id="reg"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="点击快速注册"/> 
+                       <input type="button"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="点击快速注册" onclick="mysubmit()" />
                     </div>
                     
-                </li><div class="cl"></div>
+                </li>
+
+                <div class="cl"></div>
             </ul>
             </form>
            
@@ -139,12 +141,11 @@
     </div>
     <!--注册end-->
 </div>
-<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
 <script type="text/javascript">
-$(".button_blue").click(function(){
+  function  mysubmit(){
             $.ajax({
-            type:  "GET",
-            url:"php/a.php",
+            type:  "POST",
+            url:"php/doctor_register.php",
             data: {
                 username: $("#user").val(),
                 email:$("#email").val(),
@@ -152,14 +153,91 @@ $(".button_blue").click(function(){
                 classify:$("#classify1").val(),
                 introduce:$("#introdouce").val(),
                 password:$("#passwd2").val(),
-
                 
             },
 
             dataType: "json",
      
         })
+
+            
     
-})
+}
+ function  mysubmit2(){
+            $.ajax({
+            type:  "POST",
+            url:"php/doctor_login.php",
+            data: {
+                name: $("#u").val(),
+                password:$("#p").val(),
+                
+            },
+
+
+            success: function(msg){
+                   alert(msg);
+                   window.location.href="http://127.0.0.1/Doctor/personal.html";
+                       }
+     
+        })
+
+            
+    
+}
 </script>
-</body></html>
+
+   <script src="js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8">
+   
+   </script>
+   <script type="text/javascript">
+        $("#regUser222").validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:2,
+                maxlength:10,               
+                 },
+            email:{
+            email:true,
+            required:true,
+            },
+            introduce:{
+                required:true,
+            },
+                  password1: {
+                        required: true,
+                        minlength: 4
+                    },
+                    password2: {
+                        required: true,
+                        minlength: 4,
+                        equalTo: "#passwd"
+                    },
+        },
+        messages:{
+            name:{
+                  required:"用户名必须填写",
+                  minlength:"最小长度是2个字",
+                  maxlength:"最大长度是10个字",
+            },
+            email:{
+                  email:"请写正确的email格式",
+                  required:"邮箱是必须填写的",            
+                  },
+                   introduce:{
+                required:"个人简介必须填写",
+            },
+            password1: {
+                        required: "必须填写密码",
+                        minlength: "最小四位",
+                    },
+                    password2: {
+                        required: "必须填写密码",
+                        minlength: "最小是4位",
+                        equalTo: "请输入相同的密码"
+                    },
+            }
+    })
+   </script>
+</body>
+</html>

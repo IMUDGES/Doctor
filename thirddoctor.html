@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"> 
 <head>
 
@@ -31,7 +31,7 @@
 
 <header> 
 	<div class="wrap-header">
-		<div id="logo"><a href="#"><img src="./images/logo.png"/></a></div>
+		
 		<nav>
 			<ul>
 			  <li class="current"><a href="mian.html">主页</a></li>
@@ -54,32 +54,32 @@
 		<div class="row block01">
 			<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 		<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 			<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 		<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 			<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 		<div class="col-1-3">
 				<article>
-					<button><img src="img/56r58PICazu_1024.jpg" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
+					<button><img src="" class="grayscale"/><h2 class="yyyyyyy">妇科医生   韩浩宇  如果你要预约点击图片进去描述自己的病情</h2></button>
 				</article>
 			</div>
 		</div>
@@ -96,7 +96,7 @@
      		<input id="username" type="text" name="doctorname" placeholder="请您输入您预约医生的姓名" />
      		<label for="illness"></label>
      		<input  type="text" id="illness" style="height: 100px;" name="about" placeholder="请描述您的病情"/>
-     		<input type="submit" id="submitbutton" class="btn btn-default"  value="预约医生"/>
+     		<input type="submit" id="submitbutton" class="btn btn-default"  value="一键挂号"/>
      	</form> 	
      </div>
 </div>
@@ -116,8 +116,16 @@
 			success: function(data){
                    var divs=document.getElementsByClassName("yyyyyyy");
 		           var obj = eval(data);
+	               var  imgs=document.getElementsByTagName("img");
 		           for(var i=0;i<divs.length,i<obj.length;i++)
-		                   divs[i].innerHTML="姓名："+obj[i] [0];
+		                  {
+		    
+		                   divs[i].innerHTML="姓名："+obj[i] [0]+"<br>"+"手机号："+obj[i] [1]+"<br>"+obj[i] [2];
+		                   imgs[i].src=obj[i] [3];
+		                   
+		                 
+		                  
+	 	                  }
 }
 		
    		})

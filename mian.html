@@ -7,6 +7,7 @@
 	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <script src="js/jquery-1.10.0.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8"></script>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -49,13 +50,13 @@
 						<label for="remember-me">记住登录状态</label>
 					</p>
 					<p class="fieldset">
-						<input class="full-width2" type="submit" value="登 录" onclick="finlishsunmit()">
+						<input class="full-width2" type="button" value="登 录" onclick="mysubmit()">
 					</p>
 				</form>
 			</div>
 
 			<div id="cd-signup"> <!-- 注册表单 -->
-				<form  class="cd-form" id="form11111" >
+				<form  class="cd-form" id="form11111"  action="php/common_register.php" method="get">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">用户名</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" name="name" placeholder="输入用户名">
@@ -125,27 +126,28 @@
 		<a href="javascript:;" id="next" class="arrow">&gt;</a>
 	</div>
 	<script type="text/javascript">
-   $(document).ready(function(){
-   $(".full-width2").click(function()
-   	{
-   		$.ajax({
-   			type:  "GET",
-			url: "php/common_register.php",
-			data:{
-				username: $("signup-username").val(),
-				password: $("signup-password2").val(), 
-				email: $("signup-email").val(), 
+	  function  mysubmit(){
+            $.ajax({
+            type:  "GET",
+            url:"php/common_login.php",
+            data: {
+                name:$("#signin-username").val(),
+                password:$("#signin-password").val(),
+            },
+            dataType: "json",
+            success: function(data){
+                var obj=eval(data);
+                $(".cd-user-modal").hide();
+                alert("恭喜你登录成功");
+                $('.main_nav').empty();
+                $(".main_nav").append("登录的账号是"+obj+'<button class="but111" href="" ><b>更换账户</b></button>');
+           	}
+        })
 
-			},
-			dataType: "json",
-			success: function(){
-		         alert("注册成功00000"); 
-			},
-			error: function(jqXHR){     
-			   alert("发生错误：" + jqXHR.status);  
-			}, 
-   		})
-   	})
+            
+    
+}
+   $(document).ready(function(){
    	$("#form11111").validate({
    		rules:{
    			name:{
@@ -172,7 +174,8 @@
  			}
    			}
    	})
-   })
+   		  	
+   }) 
 	</script>
 	</body>
 </html>

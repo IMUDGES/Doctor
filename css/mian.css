@@ -413,6 +413,14 @@ button{
   font-size: 15px;
   border: none;
 }
+.cd-form input[type=button] {
+  padding: 16px 0;
+  cursor: pointer;
+  background: #2f889a;
+  color: #FFF;
+  font-size: 15px;
+  border: none;
+}
 @media only screen and (min-width: 600px) {
   .cd-form {
     padding: 2em;
@@ -421,6 +429,9 @@ button{
     margin: 2em 0;
   }
   .cd-form input[type=submit] {
+    padding: 16px 0;
+  }
+    .cd-form input[type=button] {
     padding: 16px 0;
   }
 }

@@ -20,5 +20,5 @@ else {
         echo "INSERT attempt failed";
     }
 }
-#header('Location:http://localhost:81/Doctor/mian.html');
+header('Location:http://localhost:81/Doctor/mian.html');
 ?>
